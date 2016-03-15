@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".activity.ChooseCityActivity"></activity>
         <activity android:name=".activity.ChooseDistrictActiviity"></activity>
+        <activity android:name=".activity.ChooseProvinceActivity"></activity>
     </application>
 
 </manifest>

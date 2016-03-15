@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.lsl.activity.ChooseCityActivity;
+import com.lsl.activity.ChooseProvinceActivity;
 import com.lsl.model.CityModel;
 import com.lsl.model.DistrictModel;
 import com.lsl.model.ProvinceModel;
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.province:
+                intent=new Intent(MainActivity.this, ChooseProvinceActivity.class);
+                startActivity(intent);
                 break;
             case R.id.city:
                 intent=new Intent(MainActivity.this, ChooseCityActivity.class);

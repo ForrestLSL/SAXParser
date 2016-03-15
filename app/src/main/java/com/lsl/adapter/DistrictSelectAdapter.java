@@ -10,7 +10,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.lsl.R;
+import com.lsl.model.CityModel;
 import com.lsl.model.DistrictModel;
+import com.lsl.model.ProvinceModel;
 
 
 public class DistrictSelectAdapter extends BaseAdapter {
@@ -18,12 +20,12 @@ public class DistrictSelectAdapter extends BaseAdapter {
 	private LayoutInflater inflater;
 	private Context context;
 	private List<DistrictModel> datas;
-
 	public DistrictSelectAdapter(Context context, List<DistrictModel> datas) {
 		this.datas = datas;
 		this.context = context;
 		inflater = LayoutInflater.from(context);
 	}
+
 
 	@Override
 	public int getCount() {
